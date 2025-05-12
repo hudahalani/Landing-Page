@@ -54,17 +54,25 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">2024</span>
+									<span class="date">2025</span>
 									<h1><br />
-									Team Leader</h1>
-									<p>As part of the course Engineering Strategies and Practices II, we were tasked with coming up with a solution to a real world problem the client had; which was the pollution caused by steel-corroding parking blocks.</p>
+									FPGA Programmer</h1>
+									<p>As part of ECE241, I developed Brain Blitz, an interactive, FPGA-based quiz game built on the DE1-SoC board using
+									Verilog. Designed to test mental math, logic, and pattern recognition, the game displays multiple-choice questions on a
+									VGA screen and receives input from a PS2 keyboard. Players race against a countdown timer, with the game ending
+									instantly upon a wrong answer to keep the pace intense.</p>
 
                                     </p></header>
-								<div class="image main"><img src="images/finaldesign.png" alt="" /></div>
-								<p>As the team leader in a group of seven tasked with developing a solution to corroding parking blocks, I ensured that all project guidelines were strictly followed and deadlines were consistently met. I fostered a collaborative environment, promoting effective communication and cooperation among team members. Utilizing Fusion 360 (shown below), we designed and tested a prototype that met our client's specific requirements. After working closely with our client for weeks, we presented our solution, and he was thoroughly impressed with our extensive research and attention to detail. 
-                                    <a href="https://docs.google.com/document/d/1mjFqRrbcEApLbXg2VPGdSR8bqNVZulJ6/edit?usp=sharing&ouid=102642112146391084766&rtpof=true&sd=true">Attached</a>
-									 is a link to the document we submitted to the client. <p>
-                                        <div class="image main"><img src="images/autodesk.png" alt="" /></div>
+								<div class="image main"><img src="images/front.jpg" alt="" /></div>
+									<p><span class="image left"><img src="images/led.jpg" alt="" /></span> The game architecture is driven by a 13-state Finite State Machine (FSM), controlling everything from the homepage and
+									individual questions to win/loss states. A screen multiplexer dynamically selects VGA memory to reflect game progress in
+									real time. Core features include a responsive scoring system, timed gameplay, and seamless hardware-software interaction
+									through VGA and keyboard input. In the image on the left, you can see the countdown timer displayed on the HEX displays and the
+									current score shown in binary using the LEDR lights on the DE1-SoC board. In the image below, you see one of the quiz questions displayed on the VGA screen, each screen was stored in memory and
+									selected dynamically based on game state.
+									
+									<p>
+                                        <div class="image main"><img src="images/question.jpg" alt="" /></div>
                                     
                                 </p>
 							</section>
