@@ -1,20 +1,13 @@
 {
-  "name": "massivelytemp",
+  "name": "huda-halani-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Huda Halani's Portfolio Website",
+  "main": "index.html",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "echo 'This is a static HTML site. Open index.html in your browser to view.'",
+    "build": "echo 'Static site - no build required'",
+    "start": "echo 'Static site - open index.html in your browser'"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "next": "^14.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  }
+  "author": "Huda Halani",
+  "license": "ISC"
 }
