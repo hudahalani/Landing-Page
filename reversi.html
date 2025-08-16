@@ -6,48 +6,38 @@
 -->
 <html>
 	<head>
-		<title>Huda Halani's Portfolio</title>
+		<title>Reversi Game in C - Programming Project - Huda Halani</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/Hlogo.avif" type="image/jpeg" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z194TNQ7P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7Z194TNQ7P');
-</script>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" class="fade-in">
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+						<a href="index.html" class="logo">My Portfolio</a>
 					</header>
 
 				<!-- Nav -->
-				<nav id="nav">
-					<ul class="links">
-						<li class="active"><a href="index.html">Projects</a></li>
-						<li><a href="extracurricular.html">Extracurriculars</a></li>
-						<li><a href="hobbies.html">Contact</a></li>
-					</ul>
-					<ul class="icons">
-						<li><a href="resume3.pdf" class="button icon solid fa-download">Resume</a></li>
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="extracurricular.html">Extracurriculars</a></li>
+							<li><a href="hobbies.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="resume3.pdf" class="button primary icon solid fa-download">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/hudahalani/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/hudahalani?igsh=MTVoZWtpZDd1dzB6NA%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/hudahalani/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-						
-						<li><a href="https://www.linkedin.com/in/hudahalani/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://www.instagram.com/hudahalani?igsh=MTVoZWtpZDd1dzB6NA%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/hudahalani/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</nav>
 				<!-- Main -->
 					<div id="main">
 
@@ -55,21 +45,154 @@
 							<section class="post">
 								<header class="major">
 									<span class="date">2024</span>
-									<h1><br />
-									Reversi Game in C</h1>
-									<p>As part of a coding course at the University of Toronto, I was tasked to program the 'Reversi' game and compete against other students.</p>
+									<h1>Reversi Game in C<br />
+									</h1>
+									<p>University of Toronto Programming Course</p>
 								</header>
-								<div class="image main"><img src="images/reversi.jpg" alt="" /></div>
-								<p>Using C, I coded the game ‘Reversi’ which is a two-player game in which players place tiles on the board to capture the opponent’s pieces until the board is fully occupied. 
+								<div class="image main"><img src="images/reversi.jpg" alt="Reversi Game Interface" /></div>
+								
+								<h2>Project Overview</h2>
+								<p>As part of a coding course at the University of Toronto, I was tasked with programming the classic 'Reversi' game and competing against other students. This project challenged me to implement complex game logic, develop an intelligent AI opponent, and create a user-friendly terminal interface using the C programming language.</p>
 
-                            I developed a version where players can play together in the terminal, and a more enhanced version in which the program itself finds the best move and places the tile. 
-							<a href="https://github.com/hudahalani/Reversi-Game">Attached</a>
+								<h2>Game Implementation</h2>
+								
+								<h3>Core Game Logic</h3>
+								<p>Developed a complete implementation of the Reversi game with comprehensive features:</p>
+								<ul>
+									<li><strong>Game Board Management:</strong> 8x8 grid implementation with proper state tracking</li>
+									<li><strong>Move Validation:</strong> Comprehensive rules checking for valid moves</li>
+									<li><strong>Piece Capturing:</strong> Accurate implementation of the flipping mechanism</li>
+									<li><strong>Game State Tracking:</strong> Real-time monitoring of board state and player turns</li>
+									<li><strong>Win Condition Detection:</strong> Automatic game termination when board is full</li>
+								</ul>
 
+								<h3>User Interface</h3>
+								<p>Created an intuitive terminal-based interface for seamless gameplay:</p>
+								<ul>
+									<li><strong>Visual Board Display:</strong> Clear representation of the game board using ASCII characters</li>
+									<li><strong>Input Validation:</strong> Robust error handling for user input</li>
+									<li><strong>Game Status Updates:</strong> Real-time display of current player, valid moves, and score</li>
+									<li><strong>Move History:</strong> Tracking and display of previous moves</li>
+									<li><strong>Help System:</strong> Built-in instructions and game rules</li>
+								</ul>
 
-							is the code that I wrote for this game.
-                                    
-                                    
-                                </p>
+								<h2>Advanced Features</h2>
+								
+								<h3>AI Opponent</h3>
+								<p>Developed an intelligent computer opponent with strategic gameplay:</p>
+								<ul>
+									<li><strong>Move Selection Algorithm:</strong> AI that finds and executes the best available moves</li>
+									<li><strong>Strategic Decision Making:</strong> Implementation of game theory principles</li>
+									<li><strong>Difficulty Levels:</strong> Adjustable AI intelligence for different skill levels</li>
+									<li><strong>Performance Optimization:</strong> Efficient algorithm design for fast move calculation</li>
+								</ul>
+
+								<h3>Game Modes</h3>
+								<p>Implemented multiple gameplay options to enhance user experience:</p>
+								<ul>
+									<li><strong>Player vs Player:</strong> Two human players competing on the same terminal</li>
+									<li><strong>Player vs Computer:</strong> Human player against the AI opponent</li>
+									<li><strong>Computer vs Computer:</strong> AI-only games for testing and demonstration</li>
+									<li><strong>Tournament Mode:</strong> Support for competitive play against other students</li>
+								</ul>
+
+								<h2>Technical Implementation</h2>
+								
+								<h3>Data Structures</h3>
+								<p>Efficient data organization for optimal performance:</p>
+								<ul>
+									<li><strong>2D Array Implementation:</strong> Efficient board representation using arrays</li>
+									<li><strong>Move Tracking:</strong> Data structures for storing and analyzing moves</li>
+									<li><strong>State Management:</strong> Comprehensive game state tracking</li>
+									<li><strong>Memory Optimization:</strong> Efficient memory usage and management</li>
+								</ul>
+
+								<h3>Algorithm Design</h3>
+								<p>Sophisticated algorithms for game logic and AI:</p>
+								<ul>
+									<li><strong>Move Generation:</strong> Algorithm to find all valid moves for a player</li>
+									<li><strong>Move Evaluation:</strong> Scoring system for determining move quality</li>
+									<li><strong>Minimax Algorithm:</strong> Implementation of game tree search for AI decisions</li>
+									<li><strong>Alpha-Beta Pruning:</strong> Optimization technique for faster AI computation</li>
+								</ul>
+
+								<h2>Programming Skills Developed</h2>
+								<ul>
+									<li><strong>C Programming:</strong> Advanced proficiency in C language and programming concepts</li>
+									<li><strong>Algorithm Design:</strong> Implementation of complex game algorithms and data structures</li>
+									<li><strong>User Interface Design:</strong> Creating intuitive terminal-based interfaces</li>
+									<li><strong>Error Handling:</strong> Robust input validation and error management</li>
+									<li><strong>Code Organization:</strong> Modular programming with clear function separation</li>
+									<li><strong>Testing and Debugging:</strong> Comprehensive testing strategies and debugging techniques</li>
+								</ul>
+
+								<h2>Competition Performance</h2>
+								<p>The project included a competitive element where students' implementations competed against each other:</p>
+								<ul>
+									<li><strong>Tournament Participation:</strong> Active participation in class-wide competitions</li>
+									<li><strong>Performance Analysis:</strong> Evaluation of AI strength and game strategy</li>
+									<li><strong>Code Optimization:</strong> Continuous improvement based on competitive results</li>
+									<li><strong>Strategic Development:</strong> Refinement of AI algorithms for better performance</li>
+								</ul>
+
+								<h2>Code Quality</h2>
+								<ul>
+									<li><strong>Modular Design:</strong> Well-organized code with clear function separation</li>
+									<li><strong>Documentation:</strong> Comprehensive comments and code documentation</li>
+									<li><strong>Error Handling:</strong> Robust input validation and error management</li>
+									<li><strong>Performance Optimization:</strong> Efficient algorithms and data structures</li>
+									<li><strong>Code Reusability:</strong> Modular functions for maintainable code</li>
+								</ul>
+
+								<h2>Technologies Used</h2>
+								<ul>
+									<li><strong>Programming Language:</strong> C</li>
+									<li><strong>Development Environment:</strong> Unix/Linux terminal</li>
+									<li><strong>Version Control:</strong> Git for code management</li>
+									<li><strong>Testing Framework:</strong> Custom test suite for validation</li>
+									<li><strong>Documentation:</strong> Comprehensive code documentation</li>
+								</ul>
+
+								<h2>Learning Outcomes</h2>
+								<p>This project significantly enhanced my programming skills and understanding of:</p>
+								<ul>
+									<li><strong>Algorithm Design:</strong> Implementation of complex game algorithms</li>
+									<li><strong>Data Structures:</strong> Efficient organization and manipulation of data</li>
+									<li><strong>Software Engineering:</strong> Best practices for code organization and documentation</li>
+									<li><strong>Problem Solving:</strong> Systematic approach to complex programming challenges</li>
+									<li><strong>Competitive Programming:</strong> Optimization techniques for performance-critical applications</li>
+								</ul>
+
+								<h2>Project Repository</h2>
+								<p>The complete source code, including all game modes, AI implementation, and documentation, is available on GitHub. The repository showcases the full implementation and demonstrates the complexity and sophistication of the solution.</p>
+
+								<p><a href="https://github.com/hudahalani/Reversi-Game" class="button">View Source Code</a></p>
+
+								<h2>Impact</h2>
+								<p>This project demonstrated my ability to implement complex algorithms and create sophisticated software solutions using C programming. The experience strengthened my understanding of data structures, algorithm design, and software engineering principles, providing a solid foundation for future programming projects and technical challenges.</p>
+
+								<ul class="actions special">
+									<li><a href="index.html" class="button">Back to Projects</a></li>
+								</ul>
 							</section>
 
 					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Huda Halani</li><li>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

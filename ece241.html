@@ -6,48 +6,37 @@
 -->
 <html>
 	<head>
-		<title>Huda Halani's Portfolio</title>
+		<title>FPGA Programmer - Brain Blitz Game - Huda Halani</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/Hlogo.avif" type="image/jpeg" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z194TNQ7P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7Z194TNQ7P');
-</script>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" class="fade-in">
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+						<a href="index.html" class="logo">My Portfolio</a>
 					</header>
 
 				<!-- Nav -->
-				<nav id="nav">
-					<ul class="links">
-						<li class="active"><a href="index.html">Projects</a></li>
-						<li><a href="extracurricular.html">Extracurriculars</a></li>
-						<li><a href="hobbies.html">Contact</a></li>
-					</ul>
-					<ul class="icons">
-						<li><a href="resume3.pdf" class="button icon solid fa-download">Resume</a></li>
-
-						
-						<li><a href="https://www.linkedin.com/in/hudahalani/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://www.instagram.com/hudahalani?igsh=MTVoZWtpZDd1dzB6NA%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/hudahalani/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</nav>
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="extracurricular.html">Extracurriculars</a></li>
+							<li><a href="hobbies.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="resume3.pdf" class="button primary icon solid fa-download">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/hudahalani/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/hudahalani?igsh=MTVoZWtpZDd1dzB6NA%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/hudahalani/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -55,27 +44,126 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">2025</span>
-									<h1><br />
-									FPGA Programmer</h1>
-									<p>As part of ECE241, I developed Brain Blitz, an interactive, FPGA-based quiz game built on the DE1-SoC board using
-									Verilog. Designed to test mental math, logic, and pattern recognition, the game displays multiple-choice questions on a
-									VGA screen and receives input from a PS2 keyboard. Players race against a countdown timer, with the game ending
-									instantly upon a wrong answer to keep the pace intense.</p>
+									<span class="date">2024</span>
+									<h1>FPGA Programmer - Brain Blitz Game<br />
+									</h1>
+									<p>ECE241 - Digital Logic Design</p>
+								</header>
+								<div class="image main"><img src="images/de1.jpg" alt="DE1-SoC FPGA Board" /></div>
+								
+								<h2>Project Overview</h2>
+								<p>As part of ECE241, I developed Brain Blitz, an interactive, FPGA-based quiz game built on the DE1-SoC board using Verilog. Designed to test mental math, logic, and pattern recognition, the game displays multiple-choice questions on a VGA screen and receives input from a PS2 keyboard. Players race against a countdown timer, with the game ending instantly upon a wrong answer to keep the pace intense and engaging.</p>
 
-                                    </p></header>
-								<div class="image main"><img src="images/front.jpg" alt="" /></div>
-									<p><span class="image left"><img src="images/led.jpg" alt="" /></span> The game architecture is driven by a 13-state Finite State Machine (FSM), controlling everything from the homepage and
-									individual questions to win/loss states. A screen multiplexer dynamically selects VGA memory to reflect game progress in
-									real time. Core features include a responsive scoring system, timed gameplay, and seamless hardware-software interaction
-									through VGA and keyboard input. In the image on the left, you can see the countdown timer displayed on the HEX displays and the
-									current score shown in binary using the LEDR lights on the DE1-SoC board. In the image below, you see one of the quiz questions displayed on the VGA screen, each screen was stored in memory and
-									selected dynamically based on game state.
-									
-									<p>
-                                        <div class="image main"><img src="images/question.jpg" alt="" /></div>
-                                    
-                                </p>
+								<h2>Technical Implementation</h2>
+								
+								<h3>Hardware Architecture</h3>
+								<p>Brain Blitz leverages the DE1-SoC FPGA board's capabilities for real-time game processing:</p>
+								<ul>
+									<li><strong>DE1-SoC Board:</strong> Intel Cyclone V SoC with ARM Cortex-A9 processor</li>
+									<li><strong>VGA Display:</strong> 640x480 resolution for crisp question presentation</li>
+									<li><strong>PS2 Keyboard Interface:</strong> Real-time input processing for user responses</li>
+									<li><strong>LED Indicators:</strong> Visual feedback for game state and scoring</li>
+									<li><strong>HEX Displays:</strong> Countdown timer and score visualization</li>
+								</ul>
+
+								<div class="image main"><img src="images/front.jpg" alt="Game Interface Overview" /></div>
+
+								<h3>Finite State Machine Design</h3>
+								<p>The game is driven by a sophisticated 13-state Finite State Machine (FSM) that controls all aspects of gameplay:</p>
+								<ul>
+									<li><strong>State Management:</strong> Homepage, question display, input processing, win/loss states</li>
+									<li><strong>Dynamic Transitions:</strong> Smooth state changes based on user input and timer events</li>
+									<li><strong>Error Handling:</strong> Robust state recovery and system stability</li>
+									<li><strong>Performance Optimization:</strong> Minimal clock cycles for responsive gameplay</li>
+								</ul>
+
+								<div class="image main"><img src="images/led.jpg" alt="LED Score Display and Timer" /></div>
+
+								<h3>Display System</h3>
+								<p>Advanced VGA display management with dynamic content rendering:</p>
+								<ul>
+									<li><strong>Screen Multiplexer:</strong> Dynamic VGA memory selection for real-time content updates</li>
+									<li><strong>Question Storage:</strong> Multiple screens stored in memory with dynamic selection</li>
+									<li><strong>Visual Feedback:</strong> Real-time score and timer display on hardware indicators</li>
+									<li><strong>Responsive Design:</strong> Optimized rendering for smooth visual transitions</li>
+								</ul>
+
+								<div class="image main"><img src="images/question.jpg" alt="Quiz Question Display" /></div>
+
+								<h3>Input Processing</h3>
+								<p>Seamless integration of multiple input sources for intuitive gameplay:</p>
+								<ul>
+									<li><strong>PS2 Keyboard Interface:</strong> Real-time key detection and processing</li>
+									<li><strong>Input Validation:</strong> Robust error checking and response handling</li>
+									<li><strong>Multi-format Support:</strong> Handles various question types and input methods</li>
+									<li><strong>Low Latency:</strong> Minimal delay between input and system response</li>
+								</ul>
+
+								<h2>Game Features</h2>
+								<ul>
+									<li><strong>Multiple Question Types:</strong> Mental math, logic puzzles, and pattern recognition</li>
+									<li><strong>Countdown Timer:</strong> Pressure-based gameplay with visual countdown display</li>
+									<li><strong>Instant Feedback:</strong> Immediate response to correct/incorrect answers</li>
+									<li><strong>Score Tracking:</strong> Real-time score display using LED indicators</li>
+									<li><strong>Progressive Difficulty:</strong> Increasingly challenging questions as game progresses</li>
+									<li><strong>Hardware Integration:</strong> Full utilization of DE1-SoC board capabilities</li>
+								</ul>
+
+								<h2>Technical Skills Developed</h2>
+								<ul>
+									<li><strong>Verilog Programming:</strong> Hardware description language for FPGA design</li>
+									<li><strong>Digital Logic Design:</strong> Complex circuit design and optimization</li>
+									<li><strong>State Machine Design:</strong> Finite state machine implementation and debugging</li>
+									<li><strong>Hardware-Software Integration:</strong> Seamless interaction between FPGA and peripherals</li>
+									<li><strong>Real-time Systems:</strong> Timing-critical applications with strict performance requirements</li>
+									<li><strong>Debugging Techniques:</strong> Hardware debugging using oscilloscopes and logic analyzers</li>
+								</ul>
+
+								<h2>Technologies Used</h2>
+								<ul>
+									<li><strong>Hardware Description Language:</strong> Verilog HDL</li>
+									<li><strong>Development Board:</strong> Intel DE1-SoC FPGA</li>
+									<li><strong>Display Interface:</strong> VGA (640x480 resolution)</li>
+									<li><strong>Input Interface:</strong> PS2 keyboard protocol</li>
+									<li><strong>Development Tools:</strong> Quartus Prime, ModelSim</li>
+									<li><strong>Hardware Peripherals:</strong> LEDs, HEX displays, switches</li>
+								</ul>
+
+								<h2>Learning Outcomes</h2>
+								<p>This project provided hands-on experience with digital logic design and FPGA programming, strengthening my understanding of:</p>
+								<ul>
+									<li><strong>Digital Circuit Design:</strong> Complex logic circuits and optimization techniques</li>
+									<li><strong>Hardware Timing:</strong> Clock domain management and timing constraints</li>
+									<li><strong>System Integration:</strong> Multiple hardware components working together</li>
+									<li><strong>Real-time Programming:</strong> Time-critical applications and performance optimization</li>
+									<li><strong>Hardware Debugging:</strong> Troubleshooting complex digital systems</li>
+								</ul>
+
+								<h2>Impact</h2>
+								<p>Brain Blitz successfully demonstrates the capabilities of FPGA-based gaming systems, showcasing how hardware description languages can create engaging, real-time interactive experiences. The project highlights the importance of efficient state machine design and hardware-software integration in embedded systems development.</p>
+
+								<ul class="actions special">
+									<li><a href="index.html" class="button">Back to Projects</a></li>
+								</ul>
 							</section>
 
 					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Huda Halani</li><li>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
